@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DApp Bank</title>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>DApp Bank</h2>
+    <p>รหัสนักศึกษา: 650XXXXX</p>
+    <p>ชื่อ-สกุล: สมชาย สมมติ</p>
+
+    <button onclick="connectWallet()">เชื่อมต่อ Metamask</button>
+    <p id="account"></p>
+
+    <h3>ยอดเงินคงเหลือ: <span id="balance">0</span> ETH</h3>
+
+    <input type="number" id="depositAmount" placeholder="จำนวนเงิน (ETH)">
+    <button onclick="deposit()">ฝากเงิน</button>
+
+    <input type="number" id="withdrawAmount" placeholder="จำนวนเงิน (ETH)">
+    <button onclick="withdraw()">ถอนเงิน</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
